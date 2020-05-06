@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title></title>
     <?php
-      $name = $_GET["name"];
       $messaggio = "Ciao Mondo mi chiamo:";
-      $msg = "ed ho";
+      $name = $_GET["name"];
+      $msgmail = "la mia mail è :";
+      $mail = $_GET["mail"];
+      $msg = "ed ho:";
       $age = $_GET["age"];
       ?>
 
@@ -18,7 +20,7 @@
  <h3>
    <?php
 
-    echo $messaggio ." ". $name ." ". $msg. " " . $age ." ". "anni";
+    echo $messaggio ." ". $name ."<br>". $msgmail . $mail ."<br>". $msg. " " . $age ." ". "anni";
 
     ?> </h3>
   </body>
