@@ -30,7 +30,7 @@ age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti
 
     echo $messaggio ." ". $name ."<br>". $msgmail . $mail ."<br>". $msg. " " . $age ." ". "anni" ."<br>";
 
-    if (strlen($name) > 3 && is_numeric($age) && $atFinder && $dotFinder) {
+    if (strlen($name) > 3 && is_numeric($age) && $atFinder !== false && $dotFinder !== false) {
       echo "Accesso riuscito";
     } else {
       echo "Accesso negato";
